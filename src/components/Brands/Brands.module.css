@@ -1,0 +1,19 @@
+.brandsWrapper {
+  background-color: #E5E5E5;
+  padding: 7.6rem 4.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+@media (max-width: 75em) {
+  .brandsWrapper {
+    flex-wrap: wrap;
+  }
+
+  .brandsWrapper div img {
+    width: 6rem;
+  }
+}

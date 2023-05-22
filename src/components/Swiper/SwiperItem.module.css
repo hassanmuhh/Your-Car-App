@@ -1,0 +1,107 @@
+.swiperItem {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+  margin-right: 1.4rem;
+  height: 100%;
+}
+
+.imgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+
+.swiperItem h3 {
+  font-size: 3.2rem;
+  color: var(--primary-color-red);
+}
+
+.swiperItem .subTitle {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.swiperItem p {
+  font-size: 1.6rem;
+}
+
+.swiperItemBottom {
+  margin-top: 2.4rem;
+  padding: 2.4rem;
+  font-size: 1.4rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.carsControl {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.carsControl .btn {
+  background-color: var(--primary-color-red);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.carsControl button:first-child {
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+
+.carsControl button:last-child {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+
+.carsNumber {
+  font-size: 2.4rem;
+}
+
+.carInfo ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.infoIcon {
+  width: 1.6rem;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .imgWrapper img {
+    width: 90%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .swiperItemBottom {
+    padding: 0;
+  }
+}

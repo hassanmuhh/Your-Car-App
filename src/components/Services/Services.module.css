@@ -1,0 +1,115 @@
+.servicesContainer {
+  background-image: url('../../assets/images/CTA\ BG.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.servicesWrapper {
+  width: 90%;
+  color: var(--primary-color-blue);
+  margin: 0 auto;
+  padding: 7.6rem;
+}
+
+.servicesWrapper h2 {
+  font-size: 4.2rem;
+  text-align: center;
+  margin-top: 4.2rem;
+  margin-bottom: 9.6rem;
+  position: relative;
+
+}
+
+.servicesHead {
+  position: relative;
+}
+
+.servicesWrapper h2::before {
+  content: 'SERVICES';
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -170%;
+  left: 0;
+  opacity: 0.3;
+  font-size: 11.2rem;
+  text-align: center;
+
+  font-family: 'Lora';
+  font-weight: 700;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+  align-items: baseline;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceItem h3 {
+  font-size: 2.4rem;
+  margin: 4.2rem 0 1.2rem;
+}
+
+.serviceItem p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0 5.4rem;
+}
+
+/* Media */
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .serviceItem img {
+    width: 30%;
+  }
+
+  .serviceItem p {
+    padding: 0 2.4rem;
+  }
+
+  .servicesWrapper h2::before {
+    font-size: 8.2rem;
+    top: -105%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .servicesWrapper {
+    padding: 7.6rem 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .serviceItem {
+    padding: 0 4.2rem;
+  }
+
+  .serviceItem img {
+    width: 20%;
+  }
+}

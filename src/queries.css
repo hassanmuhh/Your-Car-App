@@ -1,0 +1,23 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  h1 {
+    font-size: 5.2rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}

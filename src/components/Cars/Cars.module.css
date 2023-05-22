@@ -1,0 +1,79 @@
+.carsContainer {
+  background-color: #eee;
+}
+
+.carsWrapper {
+  width: 90%;
+  margin: 0 auto 9.6rem;
+  padding: 7.6rem;
+}
+
+.head-before {
+  position: relative;
+}
+
+.head-before::before {
+  content: 'Cars';
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: -160%;
+  color: var(--primary-color-gray);
+  font-size: 11.2rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Lora';
+  font-weight: 700;
+}
+
+.head-before h2 {
+  text-align: center;
+  font-size: 4.2rem;
+  color: var(--primary-color-blue);
+
+  position: relative;
+  z-index: 11;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .carsWrapper {
+    padding: 7.6rem 3.6rem;
+  }
+
+  .head-before::before {
+    font-size: 8.2rem;
+    top: -110%;
+  }
+}
+
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .carsWrapper {
+    width: 95%;
+    padding: 7.6rem 0;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .head-before {
+    margin-bottom: 4.2rem;
+  }
+
+  .head-before::before {
+    font-size: 5.2rem;
+    top: -70%;
+  }
+}

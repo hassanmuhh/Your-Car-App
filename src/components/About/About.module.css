@@ -1,0 +1,71 @@
+.aboutWrapper {
+  width: 90%;
+  margin: 9.6rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.4rem;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  position: relative;
+}
+
+.aboutText::before {
+  content: 'ABOUT US';
+  width: 100%;
+  color: var(--primary-color-red);
+  opacity: 0.3;
+  position: absolute;
+  top: -14%;
+  left: 0;
+  font-size: 11.2rem;
+  font-family: 'Lora';
+  font-weight: 700;
+}
+
+.aboutText h2 {
+  font-size: 4.2rem;
+  color: var(--primary-color-red);
+  margin-bottom: 2.4rem;
+}
+
+.aboutText p {
+  font-size: 1.8rem;
+}
+
+.aboutImg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutImg img {
+  width: 70%;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .aboutText::before {
+    font-size: 8.2rem;
+    top: -12%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .aboutWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutImg {
+    display: none;
+  }
+}

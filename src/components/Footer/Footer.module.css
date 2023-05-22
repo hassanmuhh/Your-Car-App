@@ -1,0 +1,153 @@
+.footerWrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4.2rem;
+  padding-bottom: 0.8rem;
+}
+
+.footerContent {
+  /* width: 90%;
+  margin: 0 auto; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6.4rem;
+  justify-items: center;
+  color: var(--primary-color-blue);
+  border-bottom: 1px solid saddlebrown;
+}
+
+.main a {
+  font-size: 2.4rem;
+  color: var(--primary-color-red);
+}
+
+.main p {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.footerContent ul h3 {
+  font-size: 2.4rem;
+  color: var(--primary-color-red);
+  margin-bottom: 1.8rem;
+}
+
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsLetter {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.newsLetter .inputArea {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+.newsLetter input {
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--primary-color-red);
+  outline: none;
+}
+
+.newsLetter button {
+  padding: 1.2rem 1.8rem;
+  cursor: pointer;
+  color: var(--primary-color-light);
+  background-color: var(--primary-color-red);
+  border: none;
+}
+
+.socialIcons {
+  display: flex;
+  margin-top: 4.2rem;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.socialIcons .icon {
+  font-size: 2.4rem;
+  color: var(--primary-color-blue);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact li {
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact h3 {
+  align-self: center;
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .footerWrapper {
+    width: 95%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .footerWrapper {
+    width: 100%;
+    padding: 2.4rem;
+  }
+
+  .main p:last-child {
+    margin-bottom: 2.4rem;
+  }
+}
+
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .main,
+  .newsLetter {
+    text-align: center;
+    width: 50%;
+  }
+
+  .main a {
+    font-size: 3.2rem;
+  }
+
+  .inputArea {
+    flex-direction: column;
+  }
+
+  .contact {
+    margin-bottom: 2.4rem;
+  }
+}

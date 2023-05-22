@@ -1,0 +1,110 @@
+.cartWrapper {
+  position: fixed;
+  right: 0;
+  top: 5.2rem;
+  width: 20%;
+  height: calc(100vh - 5.2rem);
+  background-color: #12273de1;
+  color: var(--primary-color-red);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem 0.8rem;
+  z-index: 999;
+  gap: 1.8rem;
+}
+
+.cartWrapper .carInCart {
+  background-color: var(--primary-color-light);
+  width: 90%;
+}
+
+.cartWrapper .delete {
+  background-color: var(--primary-color-red);
+  color: var(--primary-color-light);
+  border: none;
+  padding: 1.2rem 2.4rem;
+  margin-top: auto;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.carInCart {
+  padding: 0.4rem 0.6rem;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.carInCart img {
+  width: 100%;
+}
+
+.cartContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.carTitle {
+  font-size: 1.6rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+}
+
+.carType {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.carControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+}
+
+.carControls p {
+  font-size: 1.8rem;
+}
+
+.carControls button {
+  background-color: var(--primary-color-red);
+  color: var(--primary-color-light);
+  border: none;
+  padding: 0 0.6rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.removeBtn {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.addBtn {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.closeCart {
+  cursor: pointer;
+  background-color: var(--primary-color-red);
+  padding: 0.4rem 0.8rem;
+  border: none;
+  color: var(--primary-color-light);
+  margin-top: 2.4rem;
+}
+
+@media (max-width: 34em) {
+  .cartWrapper {
+    width: 50%;
+  }
+}

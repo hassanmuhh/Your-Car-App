@@ -1,0 +1,142 @@
+.testiWrapper {
+  background-color: var(--primary-color-blue);
+  padding: 7.6rem;
+  padding-bottom: 11.2rem;
+}
+
+.heading-before {
+  margin: 4.2rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 4.2rem;
+  position: relative;
+}
+
+.heading-before::before {
+  content: 'Testimonials';
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: -110%;
+  color: var(--primary-color-gray);
+  opacity: 0.2;
+  font-size: 11.2rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  font-family: 'Lora';
+  font-weight: 700;
+}
+
+.testiContent {
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  padding: 4.2rem 8.2rem;
+
+  position: relative;
+}
+
+.testiContent .text {
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 1.8;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.stars {
+  margin-top: 3.2rem;
+  width: 100%;
+
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars .icon {
+  color: #EBD8B8;
+  font-size: 2.4rem;
+}
+
+.info {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 2.4rem;
+}
+
+.info span {
+  color: var(--primary-color-gray);
+}
+
+.info p {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.testiImg {
+  position: absolute;
+  bottom: -6.2rem;
+  right: -10rem;
+  width: 35%;
+}
+
+.myAutoSwiper {
+  position: initial;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .heading-before::before {
+    font-size: 8.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .testiContent {
+    width: 60%;
+  }
+}
+
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .testiContent {
+    width: 80%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .heading-before::before {
+    font-size: 5.2rem;
+    top: -70%;
+  }
+
+  .testiWrapper,
+  .testiContent {
+    padding: 4.2rem;
+  }
+
+  .testiWrapper {
+    padding-bottom: 8.2rem;
+  }
+}

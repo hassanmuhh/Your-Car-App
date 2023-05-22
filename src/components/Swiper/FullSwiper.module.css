@@ -1,0 +1,16 @@
+.swiper {
+  margin-top: 6.4rem;
+  width: 100%;
+  position: relative;
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .swiper {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
